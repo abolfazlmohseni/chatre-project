@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'vazir';
+    src: url(../../font/Vazir-Bold.woff2)format(woff2);
+}
+
+* {
+    font-family: 'vazir';
+    direction: rtl;
+}
+
+.conteyner {
+    width: 100%;
+    transition: all step-end 0.5s;
+    position: relative;
+    height: 1950px;
+}
+
+/* منوی راست */
+.menu {
+    height: 1950px;
+    width: 6.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36.5px;
+    transition: all ease-out 0.5s;
+}
+
+.menu_items-text:hover {
+    color: #F66B64;
+}
+
+.menu_items-text {
+    color: #666;
+    margin-top: 4px;
+}
+
+/* منوی راست پایان */
+/* منوی بالا */
+.topbar {
+    margin-top: 2px;
+    float: left;
+    display: flex;
+    align-items: center;
+    width: 93.2%;
+    height: 80px;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.user p {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.img-user img {
+    border-radius: 64px;
+}
+
+.notification {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.seting {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+/* منوی بالا پایان */
+/* نمودار */
+.chart-box {
+    height: 700px;
+    width: 92%;
+    margin-left: 10px;
+    float: left;
+}
+
+.chart-box h3 {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.chart-box canvas {
+    height: 620px !important;
+    overflow-x: scroll !important;
+    overflow-y: scroll !important;
+}
+
+.chartjs-render-monitor {
+    animation: chartjs 1.5s ease-in-out !important;
+    transition: all ease 0.3s !important;
+}
+
+@keyframes chartjs {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* نمودار پایان */
+/* جدول بارش و آبیارری */
+.tabel-box {
+    height: 600px;
+    width: 92%;
+    float: left;
+}
+
+table {
+    width: 90%;
+    height: 590px;
+
+    direction: ltr;
+    transition: all ease 0.3s;
+    text-align: center;
+    margin-left: 10px;
+
+}
+
+.t-heder {
+    background-color: #F7F7F7;
+    color: #4b4b4b;
+}
+
+.t-item {
+    border-bottom: 1px solid rgba(112, 112, 112, 0.308);
+    color: #888888;
+    transition: all ease 0.2s;
+}
+
+.t-item:hover {
+    background-color: #F7F7F7;
+    color: #666666;
+}
+
+/* جدول بارش و آبیارری پایان */
+.conteyner-box {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+}
+
+/* رطوبت فعلی */
+.rotobat {
+    width: 500px;
+    height: 540px;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.21);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    margin-right: 150px;
+}
+
+.rotobat h4 {
+    margin-top: 25px;
+}
+
+.conteyner-darsad {
+    position: relative;
+    width: 450px;
+    height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.darsad {
+    width: 200px;
+    height: 200px;
+    border-top: 4px solid #FFC776;
+    border-bottom: 3px solid #FFC776;
+    border-radius: 128px;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+}
+
+.svg-darsad {
+    position: absolute;
+}
+
+.darsad-text {
+    font-size: 45px;
+    margin-bottom: 0;
+    transition: all ease 0.8s;
+}
+.darsad:hover {
+    transform: rotateZ(360deg);
+}
+
+/* رطوبت فعلی پایان */
+/* دمای فعلی هوا */
+.dama-box {
+    width: 560px;
+    height: 540px;
+    padding: 5px;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.21);
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    transition: all ease 0.3s;
+
+}
+.svg-dama:hover {
+    animation: dama 0.5s ease;
+}
+@keyframes dama {
+    0%{
+        transform: rotate(15deg);
+    }
+    25%{
+        transform: rotate(-15deg);
+
+    }
+    50%{
+        transform: rotate(25deg);
+
+    }
+    75%{
+        transform: rotate(-25deg);
+
+    }
+    100%{
+        transform: rotate(0deg);
+
+    }
+    
+}
+.svg-dama {
+    margin-right: 15px;
+}
+
+.dama-text {
+    margin-right: 50px;
+}
+
+.dama-text p {
+    margin-bottom: 25px;
+    font-size: 6rem;
+}
+
+/* دمای فعلی هوا پایان */
+/* صندوق پیام ها */
+.mail-box {
+    width: 580px;
+    height: 540px;
+    margin-right: 20px;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.21);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail-items {
+    width: 556px;
+    height: 70px;
+    margin-top: 35px;
+    box-shadow: -2px 3px 8px rgba(0, 0, 0, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+
+}
+.mail-items:hover {
+    background-color: #F7F7F7;
+    color: #666666;   
+}
+.mail-items svg {
+    margin-left: 10px;
+
+}
+
+.mail_items-text {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* صندوق پیام ها پایان */
