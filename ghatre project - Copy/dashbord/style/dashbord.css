@@ -11,7 +11,7 @@
 .conteyner {
     width: 100%;
     transition: all step-end 0.5s;
-    position: relative;
+    /* position: relative; */
     height: 1950px;
 }
 
@@ -91,6 +91,7 @@
     width: 92%;
     margin-left: 10px;
     float: left;
+    overflow-x: scroll !important;
 }
 
 .chart-box h3 {
@@ -100,8 +101,6 @@
 
 .chart-box canvas {
     height: 620px !important;
-    overflow-x: scroll !important;
-    overflow-y: scroll !important;
 }
 
 .chartjs-render-monitor {
@@ -162,20 +161,24 @@ table {
 /* جدول بارش و آبیارری پایان */
 .conteyner-box {
     display: flex;
-    position: absolute;
-    bottom: 15px;
+    width: 93%;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    bottom: 0;
 }
 
 /* رطوبت فعلی */
 .rotobat {
-    width: 500px;
+    width: 27.5%;
     height: 540px;
     box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.21);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 5px;
-    margin-right: 150px;
+    margin-right: 10px;
 }
 
 .rotobat h4 {
@@ -184,7 +187,7 @@ table {
 
 .conteyner-darsad {
     position: relative;
-    width: 450px;
+    width: 25%;
     height: 460px;
     margin-left: auto;
     margin-right: auto;
@@ -223,11 +226,11 @@ table {
 /* رطوبت فعلی پایان */
 /* دمای فعلی هوا */
 .dama-box {
-    width: 560px;
+    width: 31%;
     height: 540px;
     padding: 5px;
     box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.21);
-    margin-right: 20px;
+    margin-right: 10px;
     display: flex;
     align-items: center;
     transition: all ease 0.3s;
@@ -268,15 +271,15 @@ table {
 
 .dama-text p {
     margin-bottom: 25px;
-    font-size: 6rem;
+    font-size: 350%;
 }
 
 /* دمای فعلی هوا پایان */
 /* صندوق پیام ها */
 .mail-box {
-    width: 580px;
+    width: 35%;
     height: 540px;
-    margin-right: 20px;
+    margin-right: 15px;
     box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.21);
     display: flex;
     flex-direction: column;
@@ -284,7 +287,7 @@ table {
 }
 
 .mail-items {
-    width: 556px;
+    width: 95%;
     height: 70px;
     margin-top: 35px;
     box-shadow: -2px 3px 8px rgba(0, 0, 0, 0.21);
@@ -310,3 +313,14 @@ table {
 }
 
 /* صندوق پیام ها پایان */
+/* respansev */
+@media  screen and (max-width:1024px) {
+    .svg-dama,.svg-darsad{
+        display: none;
+    }
+    .dama-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* respansev end */
