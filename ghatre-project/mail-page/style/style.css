@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'vazir';
+    src: url(../../font/Vazir-Bold.woff2)format(woff2);
+}
+
+* {
+    font-family: 'vazir';
+    direction: rtl;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.conteyner {
+    width: 100%;
+    transition: all step-end 0.5s;
+    height: 900px;
+    max-width: 1900px;
+}
+
+
+/* منوی راست */
+.menu {
+    height: 1950px;
+    width: 6.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 25px;
+    color: #5e5e5e;
+}
+
+.ghatre {
+    margin-top: 25px !important;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36.5px;
+    transition: all ease-out 0.5s;
+    text-decoration: none;
+}
+
+.menu_items-text:hover {
+    color: #F66B64;
+}
+
+.menu_items-text {
+    color: #666666;
+    margin-top: 4px;
+}
+
+/* منوی راست پایان */
+/* منوی بالا */
+.topbar {
+    margin-top: 2px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 93.2%;
+    height: 80px;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.user p {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.img-user img {
+    border-radius: 64px;
+}
+
+.notification {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.seting {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.topbar-r {
+    display: flex;
+    align-items: center;
+}
+
+.icon-menu {
+    font-size: 1.8rem;
+    margin-left: 15px;
+    display: none;
+}
+
+/* منوی بالا پایان */
+/* صندوق پیام */
+.mail-box{
+    width: 85%;
+    height: 650px;
+    border-radius: 25px;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.3);
+    float: left;
+    margin-top: 15px;
+    margin-left: 70px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table{
+    width: 1400px;
+    text-align: center;
+}
+.t-item{
+    border-bottom: 1px solid rgba(112, 112, 112, 0.308);
+    color: #888888;
+    transition: all ease 0.2s;
+    height: 55px;
+    
+
+}
+.t-link{
+    text-decoration: none;
+    background-color: #F66B64;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #e9e9e9;;
+}
+.t-item:hover {
+    background-color: #F7F7F7;
+    color: #666666;
+}
+@media screen and (max-width:768px) {
+    .menu {
+        width: 200px;
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        right: -210px;
+        overflow-x: scroll;
+        transition: 0.4s all;
+    }
+
+    .menu-items {
+        margin-top: 5px !important;
+    }
+
+    .icon-menu {
+        display: block;
+    }
+
+    .topbar,
+    .conteyner-box {
+        width: 99%;
+    }
+}

@@ -11,7 +11,6 @@
 .conteyner {
     width: 100%;
     transition: all step-end 0.5s;
-    /* position: relative; */
     height: 1950px;
 }
 
@@ -28,6 +27,11 @@
 
 .logo {
     font-size: 25px;
+    color: #5e5e5e;
+}
+
+.ghatre {
+    margin-top: 25px !important;
 }
 
 .menu-items {
@@ -36,6 +40,7 @@
     align-items: center;
     margin-top: 36.5px;
     transition: all ease-out 0.5s;
+    text-decoration: none;
 }
 
 .menu_items-text:hover {
@@ -43,7 +48,7 @@
 }
 
 .menu_items-text {
-    color: #666;
+    color: #666666;
     margin-top: 4px;
 }
 
@@ -54,6 +59,7 @@
     float: left;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 93.2%;
     height: 80px;
     box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.3);
@@ -84,6 +90,17 @@
     margin-bottom: 10px;
 }
 
+.topbar-r {
+    display: flex;
+    align-items: center;
+}
+
+.icon-menu {
+    font-size: 1.8rem;
+    margin-left: 15px;
+    display: none;
+}
+
 /* منوی بالا پایان */
 /* نمودار */
 .chart-box {
@@ -101,6 +118,7 @@
 
 .chart-box canvas {
     height: 620px !important;
+    width: 1600px !important;
 }
 
 .chartjs-render-monitor {
@@ -219,6 +237,7 @@ table {
     margin-bottom: 0;
     transition: all ease 0.8s;
 }
+
 .darsad:hover {
     transform: rotateZ(360deg);
 }
@@ -236,31 +255,38 @@ table {
     transition: all ease 0.3s;
 
 }
+
 .svg-dama:hover {
     animation: dama 0.5s ease;
 }
+
 @keyframes dama {
-    0%{
+    0% {
         transform: rotate(15deg);
     }
-    25%{
+
+    25% {
         transform: rotate(-15deg);
 
     }
-    50%{
+
+    50% {
         transform: rotate(25deg);
 
     }
-    75%{
+
+    75% {
         transform: rotate(-25deg);
 
     }
-    100%{
+
+    100% {
         transform: rotate(0deg);
 
     }
-    
+
 }
+
 .svg-dama {
     margin-right: 15px;
 }
@@ -298,10 +324,12 @@ table {
     transition: all ease-in-out 0.3s;
 
 }
+
 .mail-items:hover {
     background-color: #F7F7F7;
-    color: #666666;   
+    color: #666666;
 }
+
 .mail-items svg {
     margin-left: 10px;
 
@@ -314,13 +342,69 @@ table {
 
 /* صندوق پیام ها پایان */
 /* respansev */
-@media  screen and (max-width:1024px) {
-    .svg-dama,.svg-darsad{
+@media screen and (max-width:1024px) {
+
+    .svg-dama,
+    .svg-darsad {
         display: none;
     }
+
     .dama-text {
         margin-left: auto;
         margin-right: auto;
     }
 }
+
+@media screen and (max-width:768px) {
+    .menu {
+        width: 200px;
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        right: -210px;
+        overflow-x: scroll;
+        transition: 0.4s all;
+    }
+
+    .menu-items {
+        margin-top: 5px !important;
+    }
+
+    .icon-menu {
+        display: block;
+    }
+
+    .topbar,
+    .conteyner-box {
+        width: 99%;
+    }
+
+    .chart-box {
+        width: 98%;
+    }
+
+    .conteyner {
+        width: 99%;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .conteyner-box {
+        flex-direction: column;
+        width: 98%;
+    }
+
+    .rotobat,
+    .dama-box,
+    .mail-box {
+        width: 96%;
+        margin-top: 15px;
+    }
+
+    .svg-darsad {
+        display:block;
+    }
+}
+
 /* respansev end */
